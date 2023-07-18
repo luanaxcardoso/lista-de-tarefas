@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+body{
+    background:linear-gradient(90deg, rgb(250, 66, 235) 0%, rgba(100,8,153,1) 100%), rgb(230, 88, 235);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+*:focus{
+    outline: none;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #faf8fa;
+    margin: 0;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+form{
+    display: flex;
+    position: relative;
+    width: 600px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 20px;
+    border: #91fdde 2px solid;
+    background: #9e25ee;
+    margin-bottom: 60px;
+}
+
+input{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    border-radius: 10px;
+    color: #800798;
+    background: #f9f8f8;
+    margin: auto;
+}
+
+input::placeholder{
+    color: #ee9fe3;
+}
+
+button.add{
+    width: 100px;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius:0 10px;
+    background:#bf36b1 ;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 1rem; 
+    
+}
+
+button.add:hover{
+    background: #f175dc;
+}
+
+.listaTarefas{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 20px;
+    background: linear-gradient( #e93ac3, #2f04a3, #7613b8);
+    border: #f1f8f7 2px solid;
+    margin-bottom: 40px;
+    /*como começar o texto mais pra frente */
+    text-indent: 1rem;
+}
+
+.item{
+    display: flex;
+    width: 600px;
+    height: 40px;
+    align-items: center;
+    text-align: start;
+    padding: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.item:hover{
+    background: #fbcaf4;
+}
+
+.item span{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color:#5e0470;
+    border-radius: 0 10px;
+}
+
+.completo{
+    display: flex;
+    width: 600px;
+    height: 40px;
+    align-items: center;
+    margin: auto;
+    padding: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: #f6f4f4;
+    cursor: pointer;
+}
+
+.completo:hover{
+    background:#f4b9f8;
+}
+
+.completo span{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #757577;
+    border-radius: 0 10px;
+    text-decoration: line-through;
+
+}
+
+button.deletar{
+    width: 100px;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 0 10px;
+    background: #bd7eb5;
+    color: #fff;
+    cursor: pointer;
+    margin-left: auto;
+    
+}
+
+button.deletar:hover{
+    background: #f7a1e2;
+    color: #fff;
+    
+}
+
+button.deletartodos{
+    border: 1px solid #f8f3f7;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    background: #1e3cc0;
+    color: rgb(210, 205, 233);
+    padding: 10px;
+    margin-top: 55px;
+    font-weight: bold;
+}
+
+button.deletartodos:hover{
+    background: #9092f0;
+    color: #7b186f;
+}
+
+
+.icone{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+
+@media screen and (max-width: 600px){
+    body{
+        background: linear-gradient( #e93ac3, #6c3eeb, #f127e7);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 1.6rem;
+        color: #f6f4f4;
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    form{
+        display: flex;
+        width: 80%;
+        height: 80%;
+        margin-bottom: 10px;
+        font-size: 18px;
+        display: flex;
+        border-radius: 0 10px;
+    }
+
+    .icone{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    input {
+        font-size: 18px;
+        width: 100%;
+        padding: .5rem;
+        margin-left: 0 5px;
+        margin-right: 0 15px;
+        outline: none;
+        border-radius:0 10px;
+        background: #f4f2f4;
+        border: #ef2bde 2px solid;
+    }
+    
+    button.add {
+        width: 35%;
+        font-size: small;
+        font-weight: bold;
+        border: 1PX solid #fcfafd;
+        outline: none;
+        background: #e819e1;
+        color: #ece6e6;
+        margin-left: 5px;
+        border-radius: 0 10px;
+        padding: 10px; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+    }
+    
+    
+
+    .listaTarefas{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-bottom: 10px;
+        font-size: 20px;
+        padding: 1rem;
+        border-radius:0 20px;
+        border : 2px solid #3fede7;
+    }
+
+    .item{
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius:0 10px;
+    }
+
+    .completo{
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius:0 10px;
+    }
+
+    .item span{
+        width: 100%;
+        font-size: 20px;
+        background-color: #fdfafd;
+    }
+
+    .completo span{
+        width: 100%;
+        font-size: 20px;
+        background-color: #fbf9fb;
+    }
+
+    button.deletar{
+        width: 100px;
+        height: 100%;
+        font-size: 18px;
+        border-radius:0 10px;
+    }
+
+    button.deletartodos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 16px;
+        margin-top: 55px;
+        background-color: #c19af8;
+        color: #0917b1;
+        border : 2px solid #f8f3f7;
+    }
+    
+}
+
+
+
+    
