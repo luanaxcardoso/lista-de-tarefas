@@ -2,7 +2,7 @@
 <h1>✏️Lista de tarefas✏️</h1>
 <h2>Lista dinâmica feita com React</h2>  
 <h2>1-Digite suas tarefas.</h2> 
-<h2>2-Clique nela para riscá-la quando completar.</h2>  
+<h2>2-Clique no item para riscá-lo quando completar.</h2>  
 <h2>3-Delete individualmente ou todas.</h2>  
 
 
