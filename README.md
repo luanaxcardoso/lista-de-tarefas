@@ -1,5 +1,6 @@
 <div align="center">
 <h1>✏️Lista de tarefas✏️</h1>
+  Acesse o projeto aqui: https://lista-de-tarefas-zeta-umber.vercel.app/
 <h2>Lista dinâmica feita com React</h2>  
 <h2>1-Digite suas tarefas.</h2> 
 <h2>2-Clique no item para riscá-lo quando completar.</h2>  
