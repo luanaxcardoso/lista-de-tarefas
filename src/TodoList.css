@@ -83,7 +83,8 @@ button.add:hover{
     margin: 0 auto;
     padding: 1rem;
     border-radius: 20px;
-    background: linear-gradient( #e93ac3, #2f04a3, #7613b8);
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgb(178, 174, 238) 0%, rgb(247, 116, 247) 100%);
     border: #f1f8f7 2px solid;
     margin-bottom: 40px;
     /*como começar o texto mais pra frente */
